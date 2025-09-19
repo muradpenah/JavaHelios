@@ -7,18 +7,20 @@ public class Hard_Task3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rad = new Random();
-        int a = rad.nextInt(1,100);
-        int count=10;
-        while (count>0){
+        int a = rad.nextInt(1, 100);
+        int count = 10;
+        while (count > 0) {
             System.out.println("Eded daxil edin: ");
             int b = sc.nextInt();
-            if (a==b){
+            if (a == b) {
                 System.out.println("Qazandiniz");
                 break;
-            }else {
+            } else {
                 count--;
             }
         }
-        System.out.println("Uduzdun , canin qalmadi :(");
+        if (count == 0) {
+            System.out.println("Uduzdun , canin qalmadi :(");
+        }
     }
 }
