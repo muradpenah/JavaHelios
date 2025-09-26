@@ -248,7 +248,7 @@ public class Student_Management_System {
                     }
                     break;
                 case 7:
-                    System.out.println("NaN --- Gələcəkdə bu funksiya əlavə ediləcək.Uğurlar! ---");
+                    System.out.println("NaN --- Gələcəkdə bu funksiya əlavə ediləcək. Uğurlar! ---");
                     break;
                 case 0:
                     System.out.println("\n Çıxış edildi... Proqram dayandırıldı. Uğurlar!");
