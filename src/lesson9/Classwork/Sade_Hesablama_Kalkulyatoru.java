@@ -2,17 +2,19 @@ package lesson9.Classwork;
 
 import java.util.Scanner;
 
-public class Sadə_Hesablama_Kalkulyatoru {
+public class Sade_Hesablama_Kalkulyatoru {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("1ci eded: ");
-        double a = scanner.nextDouble();
+        String in1 = scanner.nextLine();
         System.out.println("2ci eded: ");
-        double b = scanner.nextDouble();
+        String in2 = scanner.nextLine();
         System.out.print("Əməliyyat simvolunu daxil edin (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
         try{
-            double result;
+            int a = Integer.parseInt(in1);
+            int b = Integer.parseInt(in2);
+            int result;
             switch (operator){
                 case '+':
                      result=a+b;
@@ -36,6 +38,8 @@ public class Sadə_Hesablama_Kalkulyatoru {
             System.err.println("XƏTA: " + e.getMessage());
         } catch (ArithmeticException e) {
             System.err.println("RİYAZİ XƏTA: " + e.getMessage());
+        }catch (NumberFormatException e) {
+            System.err.println("DAXİLETMƏ XƏTASI: Zəhmət olmasa, tam ədəd daxil edin. Məsələn: " + e.getMessage());
         } finally {
             scanner.close();
         }
