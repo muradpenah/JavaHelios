@@ -1,4 +1,4 @@
-package lesson11.Classwork;
+package lesson11.Classwork.task1;
 
 public class Food {
     private String name;

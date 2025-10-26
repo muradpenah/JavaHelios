@@ -1,5 +1,4 @@
-package lesson11.Classwork;
-
+package lesson11.Classwork.task1;
 
 
 public class StorageMain {
